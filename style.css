@@ -44,6 +44,11 @@ nav {
   position: relative;
 }
 
+.banner-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .banner-title {
   font-family: 'Crete Round', serif;
   font-style: normal;
@@ -291,7 +296,9 @@ nav {
 }
 
 .show-interest {
-  width: 327px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
 }
 
@@ -354,4 +361,20 @@ footer {
   display: flex;
   justify-content: center;
   padding: 5px 20px 50px 20px;
+}
+
+.btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.btn:active {
+  color: #f4f1f0;
+  background: #e05304;
+}
+
+.btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
