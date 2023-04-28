@@ -25,17 +25,14 @@ nav {
   width: 18px;
 }
 
-.nav-logo {
+.nav-logo a {
+  text-decoration: none;
+  color: #fff;
   font-family: 'Roboto', serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
-}
-
-.nav-logo a {
-  text-decoration: none;
-  color: #fff;
 }
 
 .headline-section {
