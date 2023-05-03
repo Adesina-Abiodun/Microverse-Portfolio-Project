@@ -330,6 +330,11 @@ ul {
   color: #172b4d;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-form input {
   width: 90%;
   padding: 20px 10px;
