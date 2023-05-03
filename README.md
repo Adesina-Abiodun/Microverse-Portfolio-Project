@@ -92,7 +92,7 @@ https://github.com/Adesina-Abiodun/Microverse-Portfolio-Project
 
 
 
-# 👥 Authors
+# 👥 Author
 
 # 👤 Author1
 ### Adesina Abiodun Paul
@@ -102,17 +102,6 @@ https://github.com/Adesina-Abiodun/Microverse-Portfolio-Project
 ### LinkedIn: https://www.linkedin.com/in/adesina-abiodun-paul-b513bb143
 
 ### Twitter: https://twitter.com/adesinaabiodunp
-
-# 👤 Author2
-
-### Than Trong Khanh
-### GitHub: https://github.com/khanh-devos/
-
-### GitHub: [khanh-devos](https://github.com/khanh-devos)
-### Twitter: [@khanhror](https://twitter.com/home?lang=en)
-### LinkedIn: [Khanh RoR](https://www.linkedin.com/in/khanh-than-trong-3b4344246/)
- 
-
 
 
 
