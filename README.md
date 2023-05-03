@@ -12,7 +12,7 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#author)
+- [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -92,17 +92,27 @@ https://github.com/Adesina-Abiodun/Microverse-Portfolio-Project
 
 
 
-# 👥 Author
+# 👥 Authors
 
+# 👤 Author1
 ### Adesina Abiodun Paul
-
-
 
 ### GitHub: https://github.com/adesina-abiodun
 
 ### LinkedIn: https://www.linkedin.com/in/adesina-abiodun-paul-b513bb143
 
 ### Twitter: https://twitter.com/adesinaabiodunp
+
+# 👤 Author2
+
+### Than Trong Khanh
+### GitHub: https://github.com/khanh-devos/
+
+### GitHub: [khanh-devos](https://github.com/khanh-devos)
+### Twitter: [@khanhror](https://twitter.com/home?lang=en)
+### LinkedIn: [Khanh RoR](https://www.linkedin.com/in/khanh-than-trong-3b4344246/)
+ 
+
 
 
 
