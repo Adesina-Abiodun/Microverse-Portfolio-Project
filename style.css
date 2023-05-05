@@ -29,7 +29,6 @@ nav {
   display: none;
 }
 
-
 .nav-logo a {
   text-decoration: none;
   color: #fff;
@@ -154,16 +153,11 @@ nav {
 
 .project-tools {
   display: flex;
-
 }
 
 .tools {
   margin-right: 20px;
   justify-content: space-between;
-}
-
-.tools {
-
   padding: 10px;
   font-family: 'Inter', serif;
   font-style: normal;
@@ -340,8 +334,6 @@ ul {
   text-align: center;
   color: #172b4d;
 }
-
-
 
 .contact-form {
   display: flex;
