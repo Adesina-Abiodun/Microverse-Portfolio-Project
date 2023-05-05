@@ -33,6 +33,8 @@ nav {
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+  
+  /* For animation */
   animation: color-change 2s infinite alternate;
 }
 
@@ -54,7 +56,7 @@ nav {
   }
 
   100% {
-    color: #979493;
+    color: brown;
   }
 }
 
