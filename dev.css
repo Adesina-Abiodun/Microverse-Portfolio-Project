@@ -218,13 +218,13 @@
   }
 
   .dashboard {
-    background: url("/assets/Img Placeholder (3).png");
+    background: url("/assets/dashboard.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .website {
-    background: url("/assets/Img Placeholder (4).png");
+    background: url("/assets/website.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
