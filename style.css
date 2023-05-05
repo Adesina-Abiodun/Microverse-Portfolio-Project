@@ -25,6 +25,10 @@ nav {
   width: 18px;
 }
 
+.sm-none {
+  display: none;
+}
+
 .nav-logo a {
   text-decoration: none;
   color: #fff;
@@ -149,10 +153,11 @@ nav {
 
 .project-tools {
   display: flex;
-  justify-content: space-between;
 }
 
 .tools {
+  margin-right: 20px;
+  justify-content: space-between;
   padding: 10px;
   font-family: 'Inter', serif;
   font-style: normal;
@@ -171,7 +176,7 @@ ul {
 .project-btn a,
 .get-in-touch {
   background: #ff6b00;
-  padding: 10px 15px;
+  padding: 10px;
   border: none;
   font-family: 'Inter', serif;
   font-style: normal;

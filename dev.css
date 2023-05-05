@@ -1,0 +1,299 @@
+@media (min-width: 768px) {
+  .bg-none {
+    display: none;
+  }
+
+  .sm-none {
+    display: flex;
+  }
+
+  .myLogo {
+    margin: 0 30px;
+  }
+
+  .nav-list,
+  .nav-list1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-list li {
+    margin-right: 20px;
+  }
+
+  .nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .headline-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-banner {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  .icons-desk {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .social-icons li {
+    margin-bottom: 20px;
+  }
+
+  .banner-wrapper {
+    margin-left: 5px;
+    width: 100%;
+  }
+
+  .nav-logo {
+    margin-left: 20px;
+  }
+
+  .works,
+  .about-me,
+  .work-tools,
+  .contact {
+    padding-left: 40px;
+  }
+
+  .works {
+    padding-right: 40px;
+  }
+
+  .banner-imgbg {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .banner-imgbg img {
+    width: 100%;
+  }
+
+  .project-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .project-img {
+    height: 100%;
+    width: 50%;
+  }
+
+  .project-info {
+    width: 50%;
+    height: 100%;
+    margin-left: 25px;
+  }
+
+  .img-prj {
+    height: 100%;
+    width: 100%;
+  }
+
+  .projects-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .recent-works {
+    width: 50%;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .line-container {
+    width: 50%;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .projects-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .project-2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .project-big {
+    background: url("./assets/Img Placeholder (2).png");
+    background-size: cover;
+    height: 90%;
+    border: 2px solid black;
+  }
+
+  .project-inner {
+    height: 435px;
+  }
+
+  .about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-me-title {
+    width: 45%;
+    height: 100%;
+    align-self: flex-end;
+  }
+
+  .about-me-bg {
+    display: flex;
+    width: 50%;
+  }
+
+  .line-2 {
+    margin-bottom: 100px;
+  }
+
+  .tools-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .work-list {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 40px;
+  }
+
+  .work-tool-1,
+  .language {
+    padding: 0;
+    margin: 0;
+  }
+
+  .language {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    height: auto;
+  }
+
+  .show-interest {
+    width: 40%;
+  }
+
+  .show-interest h3 {
+    text-align: left;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .contact-form {
+    width: 50%;
+  }
+
+  .get-in-touch {
+    margin: 0;
+    width: 30%;
+    justify-content: center;
+  }
+
+  .dashboard {
+    background: url("https://Adesina-Abiodun.github.io/Microverse-Portfolio-Project/assets/dashboard.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .website {
+    background: url("https://Adesina-Abiodun.github.io/Microverse-Portfolio-Project/assets/website.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  footer {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-banner {
+    width: 50%;
+  }
+
+  .banner-title {
+    font-size: 70px;
+  }
+
+  .banner-role {
+    font-size: 32px;
+  }
+
+  .banner-description,
+  .title {
+    font-size: 20px;
+    line-height: 32px;
+    width: 100%;
+  }
+
+  .recent-works {
+    width: 40%;
+  }
+
+  .line-container {
+    width: 70%;
+  }
+
+  .project-btn a {
+    display: block;
+  }
+
+  .btn-bg {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .project-btn a {
+    text-align: center;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .recent-works {
+    width: 30%;
+  }
+
+  .line-container {
+    width: 90%;
+  }
+}
