@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -184,7 +184,7 @@ This project is [MIT](./LICENSE) licensed.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://adesina-abiodun.github.io/Microverse-Portfolio-Project/)
+- [Live Demo Link](https://magical-sopapillas-dda740.netlify.app/)
 
 
 
@@ -281,4 +281,3 @@ Contributions, issues, and feature requests are welcome!
 
 📝 License
 This project is [MIT](./LICENSE) licensed.
->>>>>>> f531752ceda744a831582e1b392972f6dc7be8d9
