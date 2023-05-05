@@ -29,10 +29,11 @@ nav {
   display: none;
 }
 
+
 .nav-logo a {
   text-decoration: none;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -153,10 +154,16 @@ nav {
 
 .project-tools {
   display: flex;
+
 }
 
 .tools {
   margin-right: 20px;
+  justify-content: space-between;
+}
+
+.tools {
+
   padding: 10px;
   font-family: 'Inter', serif;
   font-style: normal;
@@ -332,6 +339,13 @@ ul {
   line-height: 44px;
   text-align: center;
   color: #172b4d;
+}
+
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-form input {
