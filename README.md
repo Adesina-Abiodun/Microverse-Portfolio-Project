@@ -42,7 +42,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://adesina-abiodun.github.io/Microverse-Portfolio-Project/)
+- [Live Demo Link](https://magical-sopapillas-dda740.netlify.app/)
 
 
 
