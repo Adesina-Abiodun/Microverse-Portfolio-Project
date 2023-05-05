@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&, seriffamily=Poppins& seriffamily=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&, seriffamily=Poppins& seriffamily=Roboto:wght@700&display=swap");
 
 * {
   margin: 0;
@@ -28,11 +28,34 @@ nav {
 .nav-logo a {
   text-decoration: none;
   color: #fff;
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+  animation: color-change 2s infinite alternate;
+}
+
+@keyframes color-change {
+  0% {
+    color: yellow;
+  }
+
+  25% {
+    color: red;
+  }
+
+  50% {
+    color: orange;
+  }
+
+  75% {
+    color: blue;
+  }
+
+  100% {
+    color: #979493;
+  }
 }
 
 .headline-section {
@@ -51,7 +74,7 @@ nav {
 }
 
 .banner-title {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -59,7 +82,7 @@ nav {
 }
 
 .banner-role {
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -69,7 +92,7 @@ nav {
 
 .banner-description {
   width: 327px;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -107,7 +130,7 @@ nav {
 }
 
 .recent-works {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -128,7 +151,7 @@ nav {
 }
 
 .project-title {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -138,7 +161,7 @@ nav {
 }
 
 .project-details {
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -154,7 +177,7 @@ nav {
 
 .tools {
   padding: 10px;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -173,7 +196,7 @@ ul {
   background: #ff6b00;
   padding: 10px 15px;
   border: none;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -230,7 +253,7 @@ ul {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 150px  20px 0 20px;
+  padding: 150px 20px 0 20px;
 }
 
 .about-me-img img {
@@ -279,7 +302,7 @@ ul {
 }
 
 .lang-1 {
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -298,7 +321,7 @@ ul {
 
 .work-list li {
   color: #fff;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -321,7 +344,7 @@ ul {
 }
 
 .show-interest h3 {
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -340,7 +363,7 @@ ul {
   padding: 20px 10px;
   margin-bottom: 20px;
   color: #979493;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -356,7 +379,7 @@ ul {
   margin-bottom: 20px;
   background: #fbf8f7;
   color: #3c3a39;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
@@ -368,7 +391,7 @@ ul {
 .get-in-touch {
   margin: 0 auto 50px auto;
   padding: 15px;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
