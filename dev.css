@@ -8,7 +8,7 @@
   }
 
   .myLogo {
-    margin: 0px 30px;
+    margin: 0 30px;
   }
 
   .nav-list,
@@ -147,8 +147,6 @@
     border: 2px solid black;
   }
 
-  
-
   .project-inner {
     height: 435px;
   }
@@ -183,7 +181,6 @@
   .work-list {
     justify-content: flex-start;
     align-items: flex-start;
-    justify-content: center;
     margin-left: 40px;
   }
 
