@@ -200,7 +200,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+    height: auto;
   }
 
   .show-interest {
@@ -217,6 +218,12 @@
     width: 50%;
   }
 
+  .get-in-touch {
+    margin: 0;
+    width: 30%;
+    justify-content: center;
+  }
+
   .dashboard {
     background: url("https://Adesina-Abiodun.github.io/Microverse-Portfolio-Project/assets/dashboard.png");
     background-size: cover;
@@ -227,6 +234,10 @@
     background: url("https://Adesina-Abiodun.github.io/Microverse-Portfolio-Project/assets/website.png");
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  footer {
+    padding: 0;
   }
 }
 
