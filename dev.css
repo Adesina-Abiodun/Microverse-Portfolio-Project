@@ -218,13 +218,13 @@
   }
 
   .dashboard {
-    background: url("/assets/dashboard.png");
+    background: url("https://Adesina-Abiodun.github.io/Microverse-Portfolio-Project/assets/dashboard.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .website {
-    background: url("/assets/website.png");
+    background: url("https://Adesina-Abiodun.github.io/Microverse-Portfolio-Project/assets/website.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
