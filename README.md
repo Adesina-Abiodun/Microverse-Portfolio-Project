@@ -44,7 +44,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://magical-sopapillas-dda740.netlify.app/)
+- [Live Demo Link](https://github.com/Adesina-Abiodun/Microverse-Portfolio-Project/issues/7)
 
 
 
