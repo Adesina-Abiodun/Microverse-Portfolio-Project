@@ -44,7 +44,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://github.com/Adesina-Abiodun/Microverse-Portfolio-Project/issues/7)
+- [Live Demo Link](https://adesina-abiodun.github.io/Microverse-Portfolio-Project/)
 
 
 
