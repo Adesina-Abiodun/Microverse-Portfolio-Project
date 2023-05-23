@@ -94,18 +94,20 @@ https://github.com/Adesina-Abiodun/Microverse-Portfolio-Project
 
 
 
-# 👥 Author
+# 👥 Authors
 
+## Author 1
 ### Adesina Abiodun Paul
 
+### GitHub: [Adesina](https://github.com/adesina-abiodun)
+### LinkedIn: [Adesina](https://www.linkedin.com/in/adesina-abiodun-paul-b513bb143)
+### Twitter: [Adesina](https://twitter.com/adesinaabiodunp)
 
-
-### GitHub: https://github.com/adesina-abiodun
-
-### LinkedIn: https://www.linkedin.com/in/adesina-abiodun-paul-b513bb143
-
-### Twitter: https://twitter.com/adesinaabiodunp
-
+## Author 2
+### Asum Victor
+### Github: [@asumVictor](https://github.com/AsumVictor)
+### Twitter: [Victor](https://twitter.com/iamasum369)
+### LinkedIn: [@asumVictor](https://www.linkedin.com/in/victorasumdev)
 
 
 # 🔭 Future Features
