@@ -62,6 +62,32 @@ nav {
   }
 }
 
+.work-list li {
+  color: #fff;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+}
+
+.project-btn a,
+.get-in-touch {
+  background: #ff6b00;
+  padding: 10px;
+  border: none;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+}
+
 .mobile-menu {
   top: 0;
   left: 0;
@@ -79,7 +105,7 @@ nav {
 #mobile-nav li {
   padding: 20px;
   height: 24px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -249,23 +275,6 @@ ul {
   list-style: none;
 }
 
-.project-btn a,
-.get-in-touch {
-  background: #ff6b00;
-  padding: 10px;
-  border: none;
-  font-family: "Inter", serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #fff;
-  text-decoration: none;
-  display: flex;
-}
-
 .project-2 {
   padding: 0 20px;
   margin-top: 20px;
@@ -375,15 +384,6 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.work-list li {
-  color: #fff;
-  font-family: "Inter", serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
 }
 
 .contact {
