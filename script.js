@@ -2,6 +2,7 @@ const hamburger = document.querySelector('.menu-btn');
 const menuClose = document.querySelector('.close-btn');
 const menuLinks = document.querySelectorAll('.menu-links');
 const mobileMenu = document.querySelector('.mobile-menu');
+const allProjectsContainer = document.querySelector('.all-projects');
 
 // event to show mobile menu links when user clicks on the humberger icon
 hamburger.addEventListener('click', () => {
@@ -22,3 +23,132 @@ for (let i = 0; i < menuLinks.length; i += 1) {
     document.body.style.overflow = 'scroll';
   });
 }
+
+
+const projectArray = [
+  {
+    projectImg: "/assets/Img Placeholder (1).png",
+    projectTitle: "Project Title 1",
+    projectDetails: "Lorem100",
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
+    link: "",
+    githubLink: ""
+  },
+  {
+    projectImg: "/assets/Img Placeholder (2).png",
+    projectTitle: "Project Title 2",
+    projectDetails: "Lorem100",
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
+    link: "",
+    githubLink: ""
+  },
+  {
+    projectImg: "/assets/Img Placeholder (1).png",
+    projectTitle: "Project Title 1",
+    projectDetails: "Lorem100",
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
+    link: "",
+    githubLink: ""
+  },
+  {
+    projectImg: "/assets/Img Placeholder (1).png",
+    projectTitle: "Project Title 2",
+    projectDetails: "Lorem100",
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
+    link: "",
+    githubLink: ""
+  },
+  {
+    projectImg: "/assets/Img Placeholder (1).png",
+    projectTitle: "Project Title 1",
+    projectDetails: "Lorem100",
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
+    link: "",
+    githubLink: ""
+  },
+  {
+    projectImg: "/assets/Img Placeholder (1).png",
+    projectTitle: "Project Title 2",
+    projectDetails: "Lorem100",
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
+    link: "",
+    githubLink: ""
+  },
+  {
+    projectImg: "/assets/Img Placeholder (1).png",
+    projectTitle: "Project Title 1",
+    projectDetails: "Lorem100",
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
+    link: "",
+    githubLink: ""
+  }
+]
+
+// To Display Projects
+document.addEventListener('DOMContentLoaded', () => {
+console.log(projectArray.length)
+let projectDiv = document.createElement('div')
+projectDiv.setAttribute('class', 'projects-container');
+let firstProject = `
+
+        <div class="project-img">
+          <img src="./assets//Img Placeholder.png" alt="" class="img-prj" />
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Multi-Post Stories</h3>
+          <p class="project-details">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a standard
+            dummy text.
+          </p>
+          <ul class="project-tools">
+            <li class="tools">CSS</li>
+            <li class="tools">HTML</li>
+            <li class="tools">Boostrap</li>
+            <li class="tools">Ruby</li>
+          </ul>
+          <div class="project-btn half">
+            <a href="#" class="btn btn-bg">See Project</a>
+          </div>
+        </div>
+`
+let project1Container = document.createElement('div')
+project1Container.setAttribute('class','project-1')
+project1Container.innerHTML = firstProject
+allProjectsContainer.appendChild(project1Container)
+projectArray.forEach((project) => {
+  if(projectArray.indexOf(project) !== 0) {
+     const projectContent = `
+     <div class="project-2 project-big">
+       <h2 class="project-title title details bg-none">
+         ${project.projectTitle}
+       </h2>
+       <h2></h2>
+       <p class="project-details title bg-none">
+       ${project.projectDetails}
+       </p>
+       <p></p>
+       <ul class="project-tools bg-none">
+          ${project.projectTools.map((tool) => `
+          <li class="tools title">${tool}</li>
+          `)}
+       </ul>
+     </div>
+     <div class="project-btn full-btn">
+       <a href="#" class="btn">See Project</a>
+     </div>
+
+     `
+
+    
+   const projectContainer = document.createElement('div');
+   projectContainer.setAttribute('class', 'project-inner innerbg');
+   projectContainer.innerHTML = projectContent;
+   projectDiv.appendChild(projectContainer);
+  }
+
+});
+
+allProjectsContainer.appendChild(projectDiv)
+});
