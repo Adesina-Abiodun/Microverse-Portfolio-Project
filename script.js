@@ -117,9 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
        ${project.projectDetails}
        </p>
        <ul class="project-tools others hover-hide">
-       ${project.projectTools.map((tool) => 
-        `<li class="tools">${tool}</li>`
-       ).join('')}
+       ${project.projectTools.map((tool) => `<li class="tools">${tool}</li>`).join('')}
        </ul>
      </div>
      <button class="${index} project-btn full-btn bg-none">
@@ -142,12 +140,12 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('project-btn') || e.target.classList.contains('btn-bg')) {
     const modalBackground = document.createElement('div');
-    const projectIndex = e.target.classList[0]
+    const projectIndex = e.target.classList[0];
     const project = projectArray[projectIndex];
     if (!project) {
       return; // Exit if the project is not found
     }
-      const modalBoxContent = `
+    const modalBoxContent = `
       <div class="modal-box">
       <div class="modal-inner">
         <div class="modal-title" >
@@ -172,10 +170,7 @@ document.addEventListener('click', (e) => {
           <div class="modal-details">
            <div class="modal-info">
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it 1960s. 
+            ${project.projectDetails}
              </p>
            </div>
            
@@ -194,15 +189,12 @@ document.addEventListener('click', (e) => {
       </div>
     </div>
       `;
-  
-   
+
     modalBackground.setAttribute('class', 'modal-background');
     modalBackground.innerHTML = modalBoxContent;
     workSection.appendChild(modalBackground);
     document.body.style.overflowY = 'hidden';
   }
-
-
 
   if (e.target.classList.contains('close-menu')) {
     const modalBoxContainer = workSection.childNodes[5];
