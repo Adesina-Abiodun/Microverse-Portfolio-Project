@@ -31,57 +31,43 @@ const projectArray = [
     projectImg: "/assets/Img Placeholder (2).png",
     projectTitle: "Project Title 1",
     projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
-    link: "",
-    githubLink: ""
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"]
   },
   {
     projectImg: "/assets/Img Placeholder (2).png",
     projectTitle: "Project Title 2",
     projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
-    link: "",
-    githubLink: ""
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"]
   },
   {
     projectImg: "/assets/dashboard.png",
     projectTitle: "Project Title 1",
     projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
-    link: "",
-    githubLink: ""
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"]
   },
   {
     projectImg: "/assets/website.png",
     projectTitle: "Project Title 2",
     projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
-    link: "",
-    githubLink: ""
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"]
   },
   {
     projectImg: "/assets/Img Placeholder (2).png",
     projectTitle: "Project Title 2",
     projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
-    link: "",
-    githubLink: ""
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"]
   },
   {
     projectImg: "/assets/dashboard.png",
     projectTitle: "Project Title 1",
     projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
-    link: "",
-    githubLink: ""
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"]
   },
   {
     projectImg: "/assets/website.png",
     projectTitle: "Project Title 2",
     projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
-    link: "",
-    githubLink: ""
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"]
   },
 ]
 
@@ -108,8 +94,8 @@ let firstProject = `
             <li class="tools">Boostrap</li>
             <li class="tools">Ruby</li>
           </ul>
-          <div class="project-btn half">
-            <a href="#" class="btn btn-bg 0">See Project</a>
+          <div class="project-btn-1 half">
+            <button class="btn btn-bg 0">See Project</button>
           </div>
         </div>
 `
@@ -173,9 +159,9 @@ document.addEventListener('click',(e)=>{
         </div>
         <br>
         <ul class="modal-list">
-          <li class="tools">HTML</li>
-          <li class="tools">Boostrap</li>
-          <li class="tools">Ruby on rails</li>
+          <li class="tools-1">HTML</li>
+          <li class="tools-1">Boostrap</li>
+          <li class="tools-1">Ruby on rails</li>
         </ul>
       </div>
       <div class="modal-img-box">
@@ -184,7 +170,7 @@ document.addEventListener('click',(e)=>{
         </div>
 
         <div class="modal-details">
-         <div>
+         <div class="modal-info">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -203,10 +189,10 @@ document.addEventListener('click',(e)=>{
          
          <div class="modal-btns">
           <div class="see-live">
-            <a href="#">See Live <img src="/assets/Icon-see live.svg" alt=""></a>
+            <a href="#">See Live  <img src="/assets/Icon-see live.svg" alt=""></a>
           </div>
           <div class="see-source">
-            <a href="#">See Source <img src="/assets/Vector.png" alt=""></a>
+            <a href="#">See Source  <img src="/assets/Vector.png" alt=""></a>
           </div>
          </div>
         </div>
@@ -219,6 +205,68 @@ document.addEventListener('click',(e)=>{
     workSection.appendChild(modalBackground)
     document.body.style.overflowY = 'hidden'
   }
+
+  if(e.target.classList.contains('btn-bg')){
+    console.log(e.target.classList[0])
+   let modalBackground = document.createElement('div')
+   let modalBoxContent = `
+   <div class="modal-box">
+   <div class="modal-inner">
+     <div class="modal-title" >
+       <div class="modal-header">
+         <h3>Keeping track of hundreds of components website</h3>
+         <div>
+           <img src="./assets/Icon.png" class="close-menu" alt="close-menu" />
+         </div>
+       </div>
+       <br>
+       <ul class="modal-list">
+         <li class="tools-1">HTML</li>
+         <li class="tools-1">Boostrap</li>
+         <li class="tools-1">Ruby on rails</li>
+       </ul>
+     </div>
+     <div class="modal-img-box">
+       <div class="modal-img">
+         <img src="/assets/Snapshoot Portfolio.png" alt="" />
+       </div>
+
+       <div class="modal-details">
+        <div class="modal-info">
+         <p>
+           Lorem Ipsum is simply dummy text of the printing and typesetting
+           industry. Lorem Ipsum has been the industry's standard dummy text
+           ever since the 1500s, when an unknown printer took a galley of
+           type and scrambled it 1960s. 
+          </p>
+
+          <p>
+           Lorem Ipsum is simply dummy text of
+           the printing and typesetting industry. Lorem Ipsum has been the
+           industry's standard dummy text ever since the 1500s, when an
+           unknown printer took a galley of type and scrambled it 1960s with
+           the releax map lapora verita.
+          </p>
+        </div>
+        
+        <div class="modal-btns">
+         <div class="see-live">
+           <a href="#">See Live  <img src="/assets/Icon-see live.svg" alt=""></a>
+         </div>
+         <div class="see-source">
+           <a href="#">See Source  <img src="/assets/Vector.png" alt=""></a>
+         </div>
+        </div>
+       </div>
+     </div>
+   </div>
+ </div>
+   `
+   modalBackground.setAttribute('class', 'modal-background')
+   modalBackground.innerHTML = modalBoxContent
+   workSection.appendChild(modalBackground)
+   document.body.style.overflowY = 'hidden'
+ }
   
   if(e.target.classList.contains('close-menu')){
    let modalBoxContainer = workSection.childNodes[5]

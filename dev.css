@@ -1,6 +1,4 @@
 @media (min-width: 768px) {
-
-
   .bg-none {
     display: none;
   }
@@ -142,9 +140,7 @@
     justify-content: flex-end;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.582);
-    border: 2px solid transparent;
   }
-
 
   .project-big {
     background: url("./assets/Img Placeholder (2).png");
@@ -156,6 +152,7 @@
   .project-inner {
     height: 435px;
     position: relative;
+    cursor: pointer;
   }
 
   .about-me {
@@ -247,25 +244,28 @@
     padding: 0;
   }
 
-  .project-btn{
+  .project-btn {
     position: absolute;
     bottom: 0;
     left: 0;
     display: none;
   }
 
-  .project-inner:hover .project-2 > .hover-hide{
- display: none;
-  }
-
-
-  .project-inner:hover .project-2{
-    background-color: transparent;
-    border: 2px solid black;
-  }
-  .project-inner:hover .project-btn{
+  .project-btn-1 {
     display: block;
-     }
+  }
+
+  .project-inner:hover .project-2 > .hover-hide {
+    display: none;
+  }
+
+  .project-inner:hover .project-2 {
+    background-color: transparent;
+    border: 1px solid black;
+  }
+  .project-inner:hover .project-btn {
+    display: block;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -302,7 +302,33 @@
 
   .btn-bg {
     width: 60%;
+    background: #ff6b00;
+  padding: 10px;
+  border: none;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  cursor: pointer;
   }
+
+  .modal-img-box {
+    display: flex;
+  }
+
+  .modal-img {
+    margin-bottom: 0;
+  }
+  
+.modal-info {
+  margin-bottom: 0px;
+}
 }
 
 @media (min-width: 1440px) {
