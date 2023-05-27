@@ -201,6 +201,7 @@
           id="email"
           placeholder="Email"
         />
+        
         <textarea
           required
           name="message"
@@ -210,7 +211,10 @@
           maxlength="500"
           placeholder="Write something here..."
         ></textarea>
-        <button type="submit" class="get-in-touch btn">Get in touch</button>
+        <div class="error-message">
+          Email address should be in lower case *
+        </div>
+        <button type="submit" class="get-in-touch btn" id="submit-btn">Get in touch</button>
       </form>
     </section>
     <hr />

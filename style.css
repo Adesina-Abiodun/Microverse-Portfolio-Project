@@ -518,6 +518,15 @@ footer {
   color: #5b5957;
 }
 
+.error-message {
+  font-size: 18px;
+  color: red;
+  display: none;
+}
+
+.error-message.show {
+  display: block;
+=======
 .modal-background {
   top: 0;
   left: 0;
