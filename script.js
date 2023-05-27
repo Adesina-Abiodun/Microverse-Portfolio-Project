@@ -3,6 +3,7 @@ const menuClose = document.querySelector('.close-btn');
 const menuLinks = document.querySelectorAll('.menu-links');
 const mobileMenu = document.querySelector('.mobile-menu');
 const allProjectsContainer = document.querySelector('.all-projects');
+const workSection = document.querySelector('.projects');
 
 // event to show mobile menu links when user clicks on the humberger icon
 hamburger.addEventListener('click', () => {
@@ -27,7 +28,7 @@ for (let i = 0; i < menuLinks.length; i += 1) {
 
 const projectArray = [
   {
-    projectImg: "/assets/Img Placeholder (1).png",
+    projectImg: "/assets/Img Placeholder (2).png",
     projectTitle: "Project Title 1",
     projectDetails: "Lorem100",
     projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
@@ -43,7 +44,7 @@ const projectArray = [
     githubLink: ""
   },
   {
-    projectImg: "/assets/Img Placeholder (1).png",
+    projectImg: "/assets/dashboard.png",
     projectTitle: "Project Title 1",
     projectDetails: "Lorem100",
     projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
@@ -51,7 +52,7 @@ const projectArray = [
     githubLink: ""
   },
   {
-    projectImg: "/assets/Img Placeholder (1).png",
+    projectImg: "/assets/website.png",
     projectTitle: "Project Title 2",
     projectDetails: "Lorem100",
     projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
@@ -59,15 +60,7 @@ const projectArray = [
     githubLink: ""
   },
   {
-    projectImg: "/assets/Img Placeholder (1).png",
-    projectTitle: "Project Title 1",
-    projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
-    link: "",
-    githubLink: ""
-  },
-  {
-    projectImg: "/assets/Img Placeholder (1).png",
+    projectImg: "/assets/Img Placeholder (2).png",
     projectTitle: "Project Title 2",
     projectDetails: "Lorem100",
     projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
@@ -75,18 +68,25 @@ const projectArray = [
     githubLink: ""
   },
   {
-    projectImg: "/assets/Img Placeholder (1).png",
+    projectImg: "/assets/dashboard.png",
     projectTitle: "Project Title 1",
     projectDetails: "Lorem100",
     projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
     link: "",
     githubLink: ""
-  }
+  },
+  {
+    projectImg: "/assets/website.png",
+    projectTitle: "Project Title 2",
+    projectDetails: "Lorem100",
+    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"],
+    link: "",
+    githubLink: ""
+  },
 ]
 
 // To Display Projects
 document.addEventListener('DOMContentLoaded', () => {
-console.log(projectArray.length)
 let projectDiv = document.createElement('div')
 projectDiv.setAttribute('class', 'projects-container');
 let firstProject = `
@@ -109,7 +109,7 @@ let firstProject = `
             <li class="tools">Ruby</li>
           </ul>
           <div class="project-btn half">
-            <a href="#" class="btn btn-bg">See Project</a>
+            <a href="#" class="btn btn-bg 0">See Project</a>
           </div>
         </div>
 `
@@ -117,11 +117,11 @@ let project1Container = document.createElement('div')
 project1Container.setAttribute('class','project-1')
 project1Container.innerHTML = firstProject
 allProjectsContainer.appendChild(project1Container)
-projectArray.forEach((project) => {
+projectArray.forEach((project,index) => {
   if(projectArray.indexOf(project) !== 0) {
      const projectContent = `
      <div class="project-inner">
-     <div class="project-2 dashboard ">
+     <div class="project-2" style='background-image:url("${project.projectImg}");'>
        <h2 class="project-title title details bg-none hover-hide">
          Profesional Art Printing Data
        </h2>
@@ -138,7 +138,7 @@ projectArray.forEach((project) => {
          <li class="tools title">Ruby</li>
        </ul>
      </div>
-     <button class="project-btn full-btn bg-none">
+     <button class="${index} project-btn full-btn bg-none">
        See Project
      </button>
    </div>
@@ -156,3 +156,73 @@ projectArray.forEach((project) => {
 
 allProjectsContainer.appendChild(projectDiv)
 });
+
+document.addEventListener('click',(e)=>{
+  if(e.target.classList.contains('project-btn')){
+     console.log(e.target.classList[0])
+    let modalBackground = document.createElement('div')
+    let modalBoxContent = `
+    <div class="modal-box">
+    <div class="modal-inner">
+      <div class="modal-title" >
+        <div class="modal-header">
+          <h3>Keeping track of hundreds of components website</h3>
+          <div>
+            <img src="./assets/Icon.png" class="close-menu" alt="close-menu" />
+          </div>
+        </div>
+        <br>
+        <ul class="modal-list">
+          <li class="tools">HTML</li>
+          <li class="tools">Boostrap</li>
+          <li class="tools">Ruby on rails</li>
+        </ul>
+      </div>
+      <div class="modal-img-box">
+        <div class="modal-img">
+          <img src="/assets/Snapshoot Portfolio.png" alt="" />
+        </div>
+
+        <div class="modal-details">
+         <div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it 1960s. 
+           </p>
+
+           <p>
+            Lorem Ipsum is simply dummy text of
+            the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an
+            unknown printer took a galley of type and scrambled it 1960s with
+            the releax map lapora verita.
+           </p>
+         </div>
+         
+         <div class="modal-btns">
+          <div class="see-live">
+            <a href="#">See Live <img src="/assets/Icon-see live.svg" alt=""></a>
+          </div>
+          <div class="see-source">
+            <a href="#">See Source <img src="/assets/Vector.png" alt=""></a>
+          </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    `
+    modalBackground.setAttribute('class', 'modal-background')
+    modalBackground.innerHTML = modalBoxContent
+    workSection.appendChild(modalBackground)
+    document.body.style.overflowY = 'hidden'
+  }
+  
+  if(e.target.classList.contains('close-menu')){
+   let modalBoxContainer = workSection.childNodes[5]
+    workSection.removeChild(modalBoxContainer)
+    document.body.style.overflowY = 'scroll'
+  }
+})

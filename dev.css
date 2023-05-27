@@ -140,7 +140,11 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.582);
+    border: 2px solid transparent;
   }
+
 
   .project-big {
     background: url("./assets/Img Placeholder (2).png");
@@ -254,6 +258,11 @@
  display: none;
   }
 
+
+  .project-inner:hover .project-2{
+    background-color: transparent;
+    border: 2px solid black;
+  }
   .project-inner:hover .project-btn{
     display: block;
      }
