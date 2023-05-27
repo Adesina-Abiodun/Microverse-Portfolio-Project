@@ -25,57 +25,56 @@ for (let i = 0; i < menuLinks.length; i += 1) {
   });
 }
 
-
 const projectArray = [
   {
-    projectImg: "/assets/Img Placeholder (2).png",
-    projectTitle: "Project Title 1",
-    projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"]
+    projectImg: '/assets/Img Placeholder (2).png',
+    projectTitle: 'Project Title 1',
+    projectDetails: 'Lorem100',
+    projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
-    projectImg: "/assets/Img Placeholder (2).png",
-    projectTitle: "Project Title 2",
-    projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"]
+    projectImg: '/assets/Img Placeholder (2).png',
+    projectTitle: 'Project Title 2',
+    projectDetails: 'Lorem100',
+    projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
-    projectImg: "/assets/dashboard.png",
-    projectTitle: "Project Title 1",
-    projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"]
+    projectImg: '/assets/dashboard.png',
+    projectTitle: 'Project Title 1',
+    projectDetails: 'Lorem100',
+    projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
-    projectImg: "/assets/website.png",
-    projectTitle: "Project Title 2",
-    projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"]
+    projectImg: '/assets/website.png',
+    projectTitle: 'Project Title 2',
+    projectDetails: 'Lorem100',
+    projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
-    projectImg: "/assets/Img Placeholder (2).png",
-    projectTitle: "Project Title 2",
-    projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"]
+    projectImg: '/assets/Img Placeholder (2).png',
+    projectTitle: 'Project Title 2',
+    projectDetails: 'Lorem100',
+    projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
-    projectImg: "/assets/dashboard.png",
-    projectTitle: "Project Title 1",
-    projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"]
+    projectImg: '/assets/dashboard.png',
+    projectTitle: 'Project Title 1',
+    projectDetails: 'Lorem100',
+    projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
-    projectImg: "/assets/website.png",
-    projectTitle: "Project Title 2",
-    projectDetails: "Lorem100",
-    projectTools: ["HTML", "CSS", "BOOTSTRAP","RUBY"]
+    projectImg: '/assets/website.png',
+    projectTitle: 'Project Title 2',
+    projectDetails: 'Lorem100',
+    projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
-]
+];
 
 // To Display Projects
 document.addEventListener('DOMContentLoaded', () => {
-let projectDiv = document.createElement('div')
-projectDiv.setAttribute('class', 'projects-container');
-let firstProject = `
+  const projectDiv = document.createElement('div');
+  projectDiv.setAttribute('class', 'projects-container');
+  const firstProject = `
 
         <div class="project-img">
           <img src="./assets//Img Placeholder.png" alt="" class="img-prj" />
@@ -98,14 +97,14 @@ let firstProject = `
             <button class="btn btn-bg 0">See Project</button>
           </div>
         </div>
-`
-let project1Container = document.createElement('div')
-project1Container.setAttribute('class','project-1')
-project1Container.innerHTML = firstProject
-allProjectsContainer.appendChild(project1Container)
-projectArray.forEach((project,index) => {
-  if(projectArray.indexOf(project) !== 0) {
-     const projectContent = `
+`;
+  const project1Container = document.createElement('div');
+  project1Container.setAttribute('class', 'project-1');
+  project1Container.innerHTML = firstProject;
+  allProjectsContainer.appendChild(project1Container);
+  projectArray.forEach((project, index) => {
+    if (projectArray.indexOf(project) !== 0) {
+      const projectContent = `
      <div class="project-inner">
      <div class="project-2" style='background-image:url("${project.projectImg}");'>
        <h2 class="project-title title details bg-none hover-hide">
@@ -129,25 +128,22 @@ projectArray.forEach((project,index) => {
      </button>
    </div>
 
-     `
+     `;
 
-    
-   const projectContainer = document.createElement('div');
-   projectContainer.setAttribute('class', 'project-inner innerbg');
-   projectContainer.innerHTML = projectContent;
-   projectDiv.appendChild(projectContainer);
-  }
+      const projectContainer = document.createElement('div');
+      projectContainer.setAttribute('class', 'project-inner innerbg');
+      projectContainer.innerHTML = projectContent;
+      projectDiv.appendChild(projectContainer);
+    }
+  });
 
+  allProjectsContainer.appendChild(projectDiv);
 });
 
-allProjectsContainer.appendChild(projectDiv)
-});
-
-document.addEventListener('click',(e)=>{
-  if(e.target.classList.contains('project-btn')){
-     console.log(e.target.classList[0])
-    let modalBackground = document.createElement('div')
-    let modalBoxContent = `
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('project-btn')) {
+    const modalBackground = document.createElement('div');
+    const modalBoxContent = `
     <div class="modal-box">
     <div class="modal-inner">
       <div class="modal-title" >
@@ -199,17 +195,16 @@ document.addEventListener('click',(e)=>{
       </div>
     </div>
   </div>
-    `
-    modalBackground.setAttribute('class', 'modal-background')
-    modalBackground.innerHTML = modalBoxContent
-    workSection.appendChild(modalBackground)
-    document.body.style.overflowY = 'hidden'
+    `;
+    modalBackground.setAttribute('class', 'modal-background');
+    modalBackground.innerHTML = modalBoxContent;
+    workSection.appendChild(modalBackground);
+    document.body.style.overflowY = 'hidden';
   }
 
-  if(e.target.classList.contains('btn-bg')){
-    console.log(e.target.classList[0])
-   let modalBackground = document.createElement('div')
-   let modalBoxContent = `
+  if (e.target.classList.contains('btn-bg')) {
+    const modalBackground = document.createElement('div');
+    const modalBoxContent = `
    <div class="modal-box">
    <div class="modal-inner">
      <div class="modal-title" >
@@ -261,16 +256,16 @@ document.addEventListener('click',(e)=>{
      </div>
    </div>
  </div>
-   `
-   modalBackground.setAttribute('class', 'modal-background')
-   modalBackground.innerHTML = modalBoxContent
-   workSection.appendChild(modalBackground)
-   document.body.style.overflowY = 'hidden'
- }
-  
-  if(e.target.classList.contains('close-menu')){
-   let modalBoxContainer = workSection.childNodes[5]
-    workSection.removeChild(modalBoxContainer)
-    document.body.style.overflowY = 'scroll'
+   `;
+    modalBackground.setAttribute('class', 'modal-background');
+    modalBackground.innerHTML = modalBoxContent;
+    workSection.appendChild(modalBackground);
+    document.body.style.overflowY = 'hidden';
   }
-})
+
+  if (e.target.classList.contains('close-menu')) {
+    const modalBoxContainer = workSection.childNodes[5];
+    workSection.removeChild(modalBoxContainer);
+    document.body.style.overflowY = 'scroll';
+  }
+});
