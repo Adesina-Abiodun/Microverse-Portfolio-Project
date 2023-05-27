@@ -23,15 +23,14 @@ for (let i = 0; i < menuLinks.length; i += 1) {
   });
 }
 
-
 document.querySelector('#submit-btn').addEventListener('click', (e) => {
   const email = document.getElementById('email').value;
   const error = document.querySelector('.error-message');
-  if (email !== email.toLowerCase()){
+  if (email !== email.toLowerCase()) {
     e.preventDefault();
-    error.classList.add('show')
+    error.classList.add('show');
     setTimeout(() => {
-      error.classList.remove('show')
+      error.classList.remove('show');
     }, 4000);
   }
 });
