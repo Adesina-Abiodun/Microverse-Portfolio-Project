@@ -25,45 +25,47 @@ for (let i = 0; i < menuLinks.length; i += 1) {
   });
 }
 
+https://Adesina-Abiodun.github.io/Microverse-Portfolio-Project/assets/dashboard.png
+
 const projectArray = [
   {
-    projectImg: '/assets/Img Placeholder.png',
+    projectImg: 'https://Adesina-Abiodun.github.io/Microverse-Portfolio-Project/assets/Img Placeholder.png',
     projectTitle: 'Professional Art Priting',
     projectDetails: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
-    projectImg: '/assets/Img Placeholder (2).png',
+    projectImg: 'https://Adesina-Abiodun.github.io/Microverse-Portfolio-Project/Img Placeholder (2).png',
     projectTitle: 'Data Dashboard Healthcare',
     projectDetails: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
-    projectImg: '/assets/dashboard.png',
+    projectImg: 'https://Adesina-Abiodun.github.io/Microverse-Portfolio-Project/assets/dashboard.png',
     projectTitle: 'Website Portfolio',
     projectDetails: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
-    projectImg: '/assets/website.png',
+    projectImg: 'https://Adesina-Abiodun.github.io/Microverse-Portfolio-Project/assets/website.png',
     projectTitle: 'Professional Art Priting',
     projectDetails: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
-    projectImg: '/assets/Img Placeholder (2).png',
+    projectImg: 'https://Adesina-Abiodun.github.io/Microverse-Portfolio-Project/assets/Img Placeholder (2).png',
     projectTitle: 'Data Dashboard Healthcare',
     projectDetails: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
-    projectImg: '/assets/dashboard.png',
+    projectImg: 'https://Adesina-Abiodun.github.io/Microverse-Portfolio-Project/assets/dashboard.png',
     projectTitle: 'Website Portfolio',
     projectDetails: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
-    projectImg: '/assets/website.png',
+    projectImg: 'https://Adesina-Abiodun.github.io/Microverse-Portfolio-Project/assets/website.png',
     projectTitle: 'Professional Art Priting',
     projectDetails: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
