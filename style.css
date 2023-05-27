@@ -36,6 +36,7 @@ a {
 .see-live a,
 .see-source a {
   color: #fff;
+  margin-right: 10px;
 }
 
 .nav-logo a {
@@ -574,6 +575,15 @@ footer {
   border: 1px solid #8993a4;
 }
 
+.modal-header h3 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
 .modal-img-box {
   display: block;
 }
@@ -596,6 +606,11 @@ footer {
 
 .modal-info {
   margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .modal-btns {
@@ -607,7 +622,15 @@ footer {
   margin-right: 10px;
   background-color: #e05304;
   padding: 10px;
-  text-align: center;
+  font-family: "Inter" , sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.03em;
 }
 
 .project-inner {
