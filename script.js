@@ -27,45 +27,45 @@ for (let i = 0; i < menuLinks.length; i += 1) {
 
 const projectArray = [
   {
-    projectImg: '/assets/Img Placeholder (2).png',
-    projectTitle: 'Project Title 1',
-    projectDetails: 'Lorem100',
+    projectImg: '/assets/Img Placeholder.png',
+    projectTitle: 'Professional Art Priting',
+    projectDetails: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
     projectImg: '/assets/Img Placeholder (2).png',
-    projectTitle: 'Project Title 2',
-    projectDetails: 'Lorem100',
+    projectTitle: 'Data Dashboard Healthcare',
+    projectDetails: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
     projectImg: '/assets/dashboard.png',
-    projectTitle: 'Project Title 1',
-    projectDetails: 'Lorem100',
+    projectTitle: 'Website Portfolio',
+    projectDetails: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
     projectImg: '/assets/website.png',
-    projectTitle: 'Project Title 2',
-    projectDetails: 'Lorem100',
+    projectTitle: 'Professional Art Priting',
+    projectDetails: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
     projectImg: '/assets/Img Placeholder (2).png',
-    projectTitle: 'Project Title 2',
-    projectDetails: 'Lorem100',
+    projectTitle: 'Data Dashboard Healthcare',
+    projectDetails: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
     projectImg: '/assets/dashboard.png',
-    projectTitle: 'Project Title 1',
-    projectDetails: 'Lorem100',
+    projectTitle: 'Website Portfolio',
+    projectDetails: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
   {
     projectImg: '/assets/website.png',
-    projectTitle: 'Project Title 2',
-    projectDetails: 'Lorem100',
+    projectTitle: 'Professional Art Priting',
+    projectDetails: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     projectTools: ['HTML', 'CSS', 'BOOTSTRAP', 'RUBY'],
   },
 ];
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <li class="tools">Ruby</li>
           </ul>
           <div class="project-btn-1 half">
-            <button class="btn btn-bg 0">See Project</button>
+            <button class=" 0 btn btn-bg 0">See Project</button>
           </div>
         </div>
 `;
@@ -108,19 +108,18 @@ document.addEventListener('DOMContentLoaded', () => {
      <div class="project-inner">
      <div class="project-2" style='background-image:url("${project.projectImg}");'>
        <h2 class="project-title title details bg-none hover-hide">
-         Profesional Art Printing Data
+        ${project.projectTitle}
        </h2>
        <h2 class="project-title title details sm-none hover-hide">
-         Data Dashboard Healthcare
+        ${project.projectTitle}
        </h2>
        <p class="project-details title hover-hide">
-         A daily selection of privately personalized reads; no accounts
-         or sign-ups required. Has been the industry's standard.
+       ${project.projectDetails}
        </p>
        <ul class="project-tools others hover-hide">
-         <li class="tools title">HTML</li>
-         <li class="tools title">Boostrap</li>
-         <li class="tools title">Ruby</li>
+       ${project.projectTools.map((tool) => 
+        `<li class="tools">${tool}</li>`
+       ).join('')}
        </ul>
      </div>
      <button class="${index} project-btn full-btn bg-none">
@@ -143,66 +142,67 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('project-btn') || e.target.classList.contains('btn-bg')) {
     const modalBackground = document.createElement('div');
-    const modalBoxContent = `
-    <div class="modal-box">
-    <div class="modal-inner">
-      <div class="modal-title" >
-        <div class="modal-header">
-          <h3>Keeping track of hundreds of components website</h3>
-          <div>
-            <img src="./assets/Icon.png" class="close-menu" alt="close-menu" />
+    const projectIndex = e.target.classList[0]
+    const project = projectArray[projectIndex];
+    if (!project) {
+      return; // Exit if the project is not found
+    }
+      const modalBoxContent = `
+      <div class="modal-box">
+      <div class="modal-inner">
+        <div class="modal-title" >
+          <div class="modal-header">
+            <h3>${project.projectTitle}</h3>
+            <div>
+              <img src="./assets/Icon.png" class="close-menu" alt="close-menu" />
+            </div>
           </div>
+          <br>
+          <ul class="modal-list">
+          ${project.projectTools.map((tool) => `
+            <li class="tools-1">${tool}</li>
+           `).join('')}
+          </ul>
         </div>
-        <br>
-        <ul class="modal-list">
-          <li class="tools-1">HTML</li>
-          <li class="tools-1">Boostrap</li>
-          <li class="tools-1">Ruby on rails</li>
-        </ul>
-      </div>
-      <div class="modal-img-box">
-        <div class="modal-img">
-          <img src="/assets/Snapshoot Portfolio.png" alt="" />
-        </div>
-
-        <div class="modal-details">
-         <div class="modal-info">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it 1960s. 
-           </p>
-
-           <p>
-            Lorem Ipsum is simply dummy text of
-            the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an
-            unknown printer took a galley of type and scrambled it 1960s with
-            the releax map lapora verita.
-           </p>
-         </div>
-         
-         <div class="modal-btns">
-          <div class="see-live">
-            <a href="#">See Live</a>
-            <img src="/assets/Icon-see live.svg" alt="">
+        <div class="modal-img-box">
+          <div class="modal-img">
+            <img src="${project.projectImg}" alt="" />
           </div>
-          <div class="see-source">
-            <a href="#">See Source</a>
-            <img src="/assets/Vector.png" alt="">
+  
+          <div class="modal-details">
+           <div class="modal-info">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it 1960s. 
+             </p>
+           </div>
+           
+           <div class="modal-btns">
+            <div class="see-live">
+              <a href="#">See Live</a>
+              <img src="/assets/Icon-see live.svg" alt="">
+            </div>
+            <div class="see-source">
+              <a href="#">See Source</a>
+              <img src="/assets/Vector.png" alt="">
+            </div>
+           </div>
           </div>
-         </div>
         </div>
       </div>
     </div>
-  </div>
-    `;
+      `;
+  
+   
     modalBackground.setAttribute('class', 'modal-background');
     modalBackground.innerHTML = modalBoxContent;
     workSection.appendChild(modalBackground);
     document.body.style.overflowY = 'hidden';
   }
+
+
 
   if (e.target.classList.contains('close-menu')) {
     const modalBoxContainer = workSection.childNodes[5];
