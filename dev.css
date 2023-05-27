@@ -263,6 +263,7 @@
     background-color: transparent;
     border: 1px solid black;
   }
+
   .project-inner:hover .project-btn {
     display: block;
   }
@@ -303,19 +304,19 @@
   .btn-bg {
     width: 60%;
     background: #ff6b00;
-  padding: 10px;
-  border: none;
-  font-family: "Inter", serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #fff;
-  text-decoration: none;
-  display: flex;
-  cursor: pointer;
+    padding: 10px;
+    border: none;
+    font-family: "Inter", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
   }
 
   .modal-img-box {
@@ -325,10 +326,10 @@
   .modal-img {
     margin-bottom: 0;
   }
-  
-.modal-info {
-  margin-bottom: 0px;
-}
+
+  .modal-info {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 1440px) {
