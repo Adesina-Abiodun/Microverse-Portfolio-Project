@@ -71,7 +71,7 @@ nav {
   line-height: 43px;
 }
 
-.project-btn a,
+.project-btn,
 .get-in-touch {
   background: #ff6b00;
   padding: 10px;
@@ -482,3 +482,5 @@ footer {
   background: #f4f1f0;
   color: #5b5957;
 }
+
+

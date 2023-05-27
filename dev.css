@@ -149,6 +149,7 @@
 
   .project-inner {
     height: 435px;
+    position: relative;
   }
 
   .about-me {
@@ -239,6 +240,21 @@
   footer {
     padding: 0;
   }
+
+  .project-btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+  }
+
+  .project-inner:hover .project-2 > .hover-hide{
+ display: none;
+  }
+
+  .project-inner:hover .project-btn{
+    display: block;
+     }
 }
 
 @media (min-width: 1024px) {
@@ -269,9 +285,9 @@
     width: 70%;
   }
 
-  .project-btn a {
+  /* .project-btn a {
     display: block;
-  }
+  } */
 
   .btn-bg {
     width: 60%;
