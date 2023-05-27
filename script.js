@@ -120,24 +120,28 @@ allProjectsContainer.appendChild(project1Container)
 projectArray.forEach((project) => {
   if(projectArray.indexOf(project) !== 0) {
      const projectContent = `
-     <div class="project-2 project-big">
-       <h2 class="project-title title details bg-none">
-         ${project.projectTitle}
+     <div class="project-inner">
+     <div class="project-2 dashboard ">
+       <h2 class="project-title title details bg-none hover-hide">
+         Profesional Art Printing Data
        </h2>
-       <h2></h2>
-       <p class="project-details title bg-none">
-       ${project.projectDetails}
+       <h2 class="project-title title details sm-none hover-hide">
+         Data Dashboard Healthcare
+       </h2>
+       <p class="project-details title hover-hide">
+         A daily selection of privately personalized reads; no accounts
+         or sign-ups required. Has been the industry's standard.
        </p>
-       <p></p>
-       <ul class="project-tools bg-none">
-          ${project.projectTools.map((tool) => `
-          <li class="tools title">${tool}</li>
-          `)}
+       <ul class="project-tools others hover-hide">
+         <li class="tools title">HTML</li>
+         <li class="tools title">Boostrap</li>
+         <li class="tools title">Ruby</li>
        </ul>
      </div>
-     <div class="project-btn full-btn">
-       <a href="#" class="btn">See Project</a>
-     </div>
+     <button class="project-btn full-btn bg-none">
+       See Project
+     </button>
+   </div>
 
      `
 
