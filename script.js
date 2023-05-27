@@ -23,7 +23,7 @@ for (let i = 0; i < menuLinks.length; i += 1) {
   });
 }
 
-
+//Validating user email address before submitting
 document.querySelector('#submit-btn').addEventListener('click', (e) => {
   const email = document.getElementById('email').value;
   const error = document.querySelector('.error-message');
