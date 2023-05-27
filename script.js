@@ -204,8 +204,6 @@ document.addEventListener('click', (e) => {
     document.body.style.overflowY = 'hidden';
   }
 
-
-
   if (e.target.classList.contains('close-menu')) {
     const modalBoxContainer = workSection.childNodes[5];
     workSection.removeChild(modalBoxContainer);
